@@ -26,7 +26,7 @@ function NavBar () {
                     <Nav.Link href="/tvseries">TV Series</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/favorites">
-                    <Nav.Link href="/favorites">MoviesDB Favorites</Nav.Link>
+                    <Nav.Link href="/favorites">Favorites</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/movies2">
                     <Nav.Link href="/movies2">Movies OMDb</Nav.Link>
