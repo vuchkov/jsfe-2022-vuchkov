@@ -1,0 +1,14 @@
+.grid-movie-container {
+    .movie-overview {
+        height: 115px;
+        overflow: hidden;
+    }
+}
+
+.favorite-icon {
+    color: $gray-400;
+    cursor: pointer;
+    &.active {
+        color: orange;
+    }
+}
