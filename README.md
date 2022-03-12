@@ -1,6 +1,6 @@
 # The Example React App
 
-- The Example React App uses the external restful APIs from:
+- The Example React App uses the following Restful APIs in JSON from:
 - http://www.omdbapi.com/
 - https://developers.themoviedb.org/3/
 
