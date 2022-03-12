@@ -1,4 +1,4 @@
-# The Example React App
+# Example React Movies App
 
 The Example React App uses the following Restful APIs in JSON:
 
