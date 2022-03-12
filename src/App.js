@@ -5,6 +5,7 @@ import Movies from "./pages/Movies";
 import TVSeries from "./pages/TVSeries";
 import {ThemeProvider} from "./ThemeContext";
 import Favorites from "./pages/Favorites";
+import Movies2 from "./pages/Movies2";
 
 import {
   BrowserRouter as Router,
@@ -29,6 +30,10 @@ const routes = [
   {
     path: 'favorites',
     component: <Favorites/>,
+  },
+  {
+    path: '/movies2',
+    component: <Movies2/>,
   }
 ]
 

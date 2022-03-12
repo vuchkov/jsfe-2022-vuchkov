@@ -20,13 +20,16 @@ function NavBar () {
                     <Nav.Link href="/">Home</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/movies">
-                    <Nav.Link href="/movies">Movies</Nav.Link>
+                    <Nav.Link href="/movies">MoviesDB</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/tvseries">
                     <Nav.Link href="/tvseries">TV Series</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/favorites">
-                    <Nav.Link href="/favorites">Favorite Movies</Nav.Link>
+                    <Nav.Link href="/favorites">MoviesDB Favorites</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/movies2">
+                    <Nav.Link href="/movies2">Movies OMDb</Nav.Link>
                 </LinkContainer>
             </Nav>
             <ToggleTheme/>
