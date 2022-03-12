@@ -1,6 +1,7 @@
 # The Example React App
 
-- The Example React App uses the following Restful APIs in JSON from:
+The Example React App uses the following Restful APIs in JSON from:
+
 - OMDb API: http://www.omdbapi.com/
 - The Movie Database API:https://developers.themoviedb.org/3/
 
