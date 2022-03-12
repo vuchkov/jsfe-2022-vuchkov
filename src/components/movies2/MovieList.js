@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThList, faGripHorizontal } from '@fortawesome/free-solid-svg-icons';
 import MovieGridItem from "./MovieGridItem";
 import { useSelector, useDispatch } from 'react-redux';
-import { setListView } from "../../redux/actions";
+import { setListView } from "../../redux/actions2";
 import { selectAverageRating } from "../../redux/selectors";
 
 function MovieList(props) {
@@ -29,7 +29,7 @@ function MovieList(props) {
     function getMovieListItems() {
         return movies.map(movie => {
             return <MovieListItem 
-                key={movie.id}
+                key={movie.imdbID}
                 movie={movie}
                 >
             </MovieListItem>
@@ -39,7 +39,7 @@ function MovieList(props) {
     function getMovieGridItems() {
         return movies.map(movie => {
             return <MovieGridItem 
-                key={movie.id}
+                key={movie.imdbID}
                 movie={movie}
                 >
             </MovieGridItem>

@@ -1,7 +1,7 @@
-import MovieList from "../components/movies/MovieList";
-import Filters from "../components/filters/Filters";
+import MovieList from "../components/movies2/MovieList";
+import Filters from "../components/filters2/Filters";
 import {Col} from "react-bootstrap";
-import {MovieProvider} from "../components/movies/MovieContext";
+import {MovieProvider} from "../components/movies2/MovieContext";
 
 function Movies2(props) {
     return (

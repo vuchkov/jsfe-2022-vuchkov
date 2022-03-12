@@ -1,19 +1,17 @@
 import React, { useContext, useState } from "react";
 import axios from 'axios';
-import constants from '../../constants';
-import moment from "moment";
+import constants2 from '../../constants2';
 
 const MovieContext = React.createContext();
 
 export function useMovie() {
     return useContext(MovieContext);
 }
+
 export function MovieProvider(props) {
 
-    const [selectedSortBy, setSelectedSortBy] = useState("popularity.desc");
-    const startFrom = moment().subtract(1, 'years').toDate();
-    const [startDate, setStartDate] = useState(startFrom);
-    const [endDate, setEndDate] = useState(new Date());
+    const [byName] = useState('Matrix');
+    const [byYear] = useState('');
     
     const [checkedState, setCheckedState] = useState(
         new Array(4).fill(false)
@@ -25,8 +23,8 @@ export function MovieProvider(props) {
     const [movies, setMovies] = useState([]);
 
     const fetchMovies = (path, params) => {
-        axios.get(`${constants.baseUrl}${path}` , {
-            params: {...params, api_key: constants.apiKey}
+        axios.get(`${constants2.url}${path}` , {
+            params: {...params, apikey: constants2.apikey}
         })
         .then(response => {
             setMovies(response.data.results);
@@ -35,12 +33,8 @@ export function MovieProvider(props) {
 
     return (
         <MovieContext.Provider value={{
-                selectedSortBy, 
-                setSelectedSortBy,
-                startDate,
-                setStartDate,
-                endDate,
-                setEndDate,
+                byName,
+                byYear,
                 checkedState,
                 setCheckedState,
                 movies,
