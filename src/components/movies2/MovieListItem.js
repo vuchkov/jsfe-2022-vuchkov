@@ -12,10 +12,14 @@ function MovieListItem({movie}) {
                     <div className="d-flex align-items-start justify-content-between">
                         <div>
                             <div className="fw-bold movie-title">{movie.Title}</div>
-                            <div className="movie-release-date">{movie.Year}</div>
-                            <div className="movie-release-date">{movie.imdbID}</div>
-                            <div className="movie-release-date">{movie.Type}</div>
+                            <div className="movie-release-date">
+                                <p>Year: {movie.Year}</p>
+                            </div>
                         </div>
+                    </div>
+                    <div className="movie-overview pt-3">
+                        <p>Type: <span className="capitalize">{movie.Type}</span><br />
+                        IMDB: {movie.imdbID}</p>
                     </div>
                 </div>
             </div>
