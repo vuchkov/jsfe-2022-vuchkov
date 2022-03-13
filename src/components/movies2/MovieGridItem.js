@@ -7,9 +7,9 @@ function MovieGridItem({movie}) {
         <>
             <div className="col-md-3">
                 <div className="grid-movie-container img-thumbnail mb-3">
-                    <img className="movie-poster" 
+                    <img className="movie2-poster" 
                     src={getPoster()} alt={movie.title}/>
-                    <div className="movie-overview pt-3">
+                    <div className="movie2-overview pt-3">
                         <div className="fw-bold movie-title py-1">{movie.Title}</div>
                         <div className="movie-release-date"></div>
                         <p>
