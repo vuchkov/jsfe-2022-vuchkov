@@ -9,6 +9,13 @@ The Example React App uses the following Restful APIs in JSON:
 
 - Add new API 2 - OMDb API: http://www.omdbapi.com/
 
+# Author
+
+Ilcho Vuchkov\
+Faculty number: 2101427002\
+MSc: Business Informatics with English language\
+University of Plovdiv
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
