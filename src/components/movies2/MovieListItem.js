@@ -7,7 +7,7 @@ function MovieListItem({movie}) {
     return (
         <>
             <div className="d-flex py-1">
-                <img className="movie-poster" src={getPoster()} alt={movie.Title}/>
+                <img className="movie2-poster" src={getPoster()} alt={movie.Title}/>
                 <div className="px-3 flex-grow-1">
                     <div className="d-flex align-items-start justify-content-between">
                         <div>
@@ -17,7 +17,7 @@ function MovieListItem({movie}) {
                             </div>
                         </div>
                     </div>
-                    <div className="movie-overview pt-3">
+                    <div className="movie2-overview pt-3">
                         <p>Type: <span className="capitalize">{movie.Type}</span><br />
                         IMDB: {movie.imdbID}</p>
                     </div>
