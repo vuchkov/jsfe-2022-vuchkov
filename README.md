@@ -14,7 +14,8 @@ The Example React App uses the following Restful APIs in JSON:
 Ilcho Vuchkov\
 Faculty number: 2101427002\
 MSc: Business Informatics with English language\
-University of Plovdiv
+University of Plovdiv\
+Repository URL: https://github.com/vuchkov/jsfe-2022-vuchkov
 
 # Getting Started with Create React App
 
