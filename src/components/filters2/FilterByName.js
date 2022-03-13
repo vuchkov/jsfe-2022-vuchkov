@@ -16,6 +16,7 @@ function FilterByName(props) {
                 type="text"
                 value={byName}
                 onChange={e => setByName(e.target.value)}
+                placeholder="Matrix, Godfather, etc."
                 required />
         </div>
         </Form.Group>
