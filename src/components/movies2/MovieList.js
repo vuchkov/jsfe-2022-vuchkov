@@ -6,7 +6,7 @@ import { faThList, faGripHorizontal } from '@fortawesome/free-solid-svg-icons';
 import MovieGridItem from "./MovieGridItem";
 import { useSelector, useDispatch } from 'react-redux';
 import { setListView } from "../../redux/actions2";
-import { countMovies } from "../../redux/selectors2";
+import { countMovies } from "../../redux/counter";
 
 function MovieList(props) {
     const rootState = useSelector(state => state);
