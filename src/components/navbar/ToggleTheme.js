@@ -17,8 +17,6 @@ function ToggleTheme () {
     const calculateResult = useMemo(() => {
         return calculate(initialValue);
     }, [initialValue])
-    console.log(calculateResult);
-
 
     const [theme, toggleTheme] = useTheme();
 

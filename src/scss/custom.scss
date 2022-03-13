@@ -4,11 +4,11 @@
         overflow: hidden;
     }
     .movie2-poster {
-        height: 320px;
+        height: auto;
         max-width: 100%;
     }
     .movie2-overview {
-        height: 130px;
+        min-height: 150px;
         overflow: hidden;
         text-align: center;
     }
