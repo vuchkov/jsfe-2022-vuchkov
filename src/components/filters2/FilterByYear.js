@@ -3,7 +3,7 @@ import {useMovie} from "../movies2/MovieContext";
 
 function FilterByYear(props) {
 
-    const {byYear} = useMovie();
+    const {byYear, setByYear} = useMovie();
 
     return (
         <Form.Group
@@ -12,9 +12,10 @@ function FilterByYear(props) {
         <Form.Label>Въведете година</Form.Label>
         <div className="d-flex align-items-center">
             <Form.Control 
-                wrapperClassName="w-75 ms-auto"
                 className="form-control"
-                type="text" />
+                type="text"
+                value={byYear} 
+                onChange={e => setByYear(e.target.value)} />
         </div>
         </Form.Group>
     )

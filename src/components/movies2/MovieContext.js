@@ -10,15 +10,10 @@ export function useMovie() {
 
 export function MovieProvider(props) {
 
-    const [byName] = useState('Matrix');
-    const [byYear] = useState('');
-    
-    const [checkedState, setCheckedState] = useState(
-        new Array(4).fill(false)
-    );
+    const [byName, setByName] = useState('Matrix');
+    const [byYear, setByYear] = useState('');
 
     const [listView, setListView] = useState(true);
-
 
     const [movies, setMovies] = useState([]);
 
@@ -29,14 +24,15 @@ export function MovieProvider(props) {
         .then(response => {
             setMovies(response.data.results);
         })
+        console.log(params);
     }
 
     return (
         <MovieContext.Provider value={{
                 byName,
+                setByName,
                 byYear,
-                checkedState,
-                setCheckedState,
+                setByYear,
                 movies,
                 setMovies,
                 fetchMovies,

@@ -3,19 +3,20 @@ import {useMovie} from "../movies2/MovieContext";
 
 function FilterByName(props) {
 
-    const {byName} = useMovie();
+    const {byName, setByName} = useMovie();
 
     return (
         <Form.Group 
         className="mb-3" 
         controlId="filterForm.ControlYear1">
-        <Form.Label>Търсене</Form.Label>
+        <Form.Label>Търсене <span className="text-danger">*</span></Form.Label>
         <div className="d-flex align-items-center">
             <Form.Control 
-                wrapperClassName="w-75 ms-auto"
                 className="form-control"
                 type="text"
-                value={byName} />
+                value={byName}
+                onChange={e => setByName(e.target.value)}
+                required />
         </div>
         </Form.Group>
     )
