@@ -48,10 +48,7 @@ function MovieList(props) {
         <Card>
             <Card.Body>
                 <div className="d-flex justify-content-between align-items-center mb-2">
-                    <Card.Title>Намерени резултати:</Card.Title>
-                    <div className="vote-average">
-                        {count}
-                    </div>
+                    <Card.Title>Намерени резултати: {count}</Card.Title>
                     <ButtonGroup aria-label="List switch">
                         <Button variant={listView ? 'primary': 'outline-primary'}
                             onClick={()=> dispatch(setListView(true))}>
