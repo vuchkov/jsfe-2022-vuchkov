@@ -14,8 +14,7 @@ function MovieGridItem({movie}) {
                         <div className="movie-release-date"></div>
                         <p>
                             type: <span className="capitalize">{movie.Type}</span><br />
-                            year: {movie.Year}
-                            <br />
+                            year: {movie.Year}<br />
                             IMDB: {movie.imdbID}
                         </p>
                     </div>
